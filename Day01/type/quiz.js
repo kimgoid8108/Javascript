@@ -1,9 +1,9 @@
-// const first = window.prompt("숫자를 입력하시오");
-// const second = window.prompt("숫자를 입력하시오");
+const first = window.prompt("숫자를 입력하시오");
+const second = window.prompt("숫자를 입력하시오");
 
-// const result = Number(first) + Number(second);
+const result = Number(first) + Number(second);
 
-// window.console.log(`${first} + ${second} = ${result}`);
+window.console.log(`${first} + ${second} = ${result}`);
 
 const year = Number(window.prompt("몇년생이십니까?"));
 
