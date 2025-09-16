@@ -7,7 +7,7 @@ const classroom = [
 // 만약에 수용인원 가능하면, 학생수를 늘리고 콘솔로그 클래스룸 결과보여주기
 // 만약에 수용인원 불가능하면, 알럿으로 불가! 콘솔로그 클래스룸 결과보여주기
 
-const wish = window.prompt("어떤 과목의 수업을 듣고 싶으신가요?");
+const wish = window.prompt("과목 선택 (java, python, javascript)");
 
 if (classroom[0].lecture == wish) {
   classroom[0].students = classroom[0].students + 1;
