@@ -15,3 +15,5 @@ const d1 = "98" + "12"; // 9812
 // 산술연산자: Number + Number
 // 문자연결연산자: String + String
 // 단항연산자: Number or +String -> Number
+
+// Boolean 화: Boolean(), !, 비교연산자
