@@ -1573,8 +1573,13 @@ const data = {
 
 // 1. 옷 이름이랑 브랜드 마켓 이름, 판매된 수
 
-const entities = data.components
-  .map((v) => v.entity)
-  .map((v) => v.item_list)
-  .filter((v) => v.length);
-console.log(entities);
+const itemlist = data.components
+  .map((v) => v.entity.item_list)
+  .flat()
+  .map((v) => v.item_entity.item)
+  .map((v) => ({
+    name: v.name,
+    market_name: v.market_name,
+    sell_count: v.sell_count,
+  }));
+console.log(itemlist);
